@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.studyapp.databinding.ItemRowBinding
 
-class RVAdapter(private val activity: Activity, private val items: ArrayList<ArrayList<String>>):
-    RecyclerView.Adapter<RVAdapter.ItemViewHolder>() {
+class StudyAdapter(private val activity: Activity, private val items: ArrayList<ArrayList<String>>):
+    RecyclerView.Adapter<StudyAdapter.ItemViewHolder>() {
     class ItemViewHolder(val binding: ItemRowBinding): RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {

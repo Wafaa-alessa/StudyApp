@@ -28,7 +28,7 @@ class KotlinActivity : AppCompatActivity() {
         )
 
         val RecycKotlin = findViewById<RecyclerView>(R.id.recyKotlin)
-        RecycKotlin.adapter = RVAdapter(this, items)
+        RecycKotlin.adapter = StudyAdapter(this, items)
         RecycKotlin.layoutManager = LinearLayoutManager(this)
 
         title = "Kotlin Review"

@@ -25,7 +25,7 @@ class AndroidActivity : AppCompatActivity() {
             arrayListOf("Shared Preferences", "allow us to save data to the user's device.", "Detailed notes here.")
             )
         val RecyAndroid = findViewById<RecyclerView>(R.id.recyAndroid)
-        RecyAndroid.adapter = RVAdapter(this, items)
+        RecyAndroid.adapter = StudyAdapter(this, items)
         RecyAndroid.layoutManager = LinearLayoutManager(this)
         title = "Android Review"
     }
